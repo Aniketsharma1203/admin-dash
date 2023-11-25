@@ -265,10 +265,37 @@ body{
 .Announcements{
     grid-column-start: 2;
     grid-column-end: 3;
+    display: block;
 }
+.Announcements .contain{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: yellow
+}
+.site-main{
+    padding: 30px;
+    position: relative;
+}
+.site-main h4{
+    padding: 5px;
+    margin: 0%;
+}
+.site-main p{
+    padding: 0px;
+    margin: 0%;
+}
+.site-main::after {
+    content: '';
+    position: absolute;
+    bottom: 5%; 
+    left: 10%;
+    width: 80%; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); 
+  }
 .Trending{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
