@@ -212,54 +212,153 @@ body{
 }
 .project-title  p{
     margin: 0;
-    padding:0;
+    padding:20px;
     color: rgb(125, 125, 125);
 }
 .project-title h3{
     margin: 0;
     padding: 0;
     padding-bottom: 5px;
+    color: rgb(98, 72, 33);
 }
 .project-title .super-cool{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
+    position: relative;
+}
+.project-title .super-cool .first-img{
+    position: absolute;
+    bottom: 10px;
+    right: 120px;
+}
+.project-title .super-cool .sec-img{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.project-title .super-cool .third-img{
+    position: absolute;
+    bottom: 10px;
+    right: 70px;
 }
 
-.project-title .first-img{
-    margin-left: 120px;
-}
-.project-title img{
-    margin-top: 30px;
-    filter: invert(50%);
-    margin-left: 40px;
-}
 .project-title .less-cool{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
+    position: relative;
 }
+
+.project-title .less-cool .first-img{
+    position: absolute;
+    bottom: 10px;
+    right: 120px;
+}
+.project-title .less-cool .sec-img{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.project-title .less-cool .third-img{
+    position: absolute;
+    bottom: 10px;
+    right: 70px;
+}
+
 .project-title .impossible-app{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
+    position: relative;
 }
+
+.project-title .impossible-app .first-img{
+    position: absolute;
+    bottom: 10px;
+    right: 120px;
+}
+.project-title .impossible-app .sec-img{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.project-title .impossible-app .third-img{
+    position: absolute;
+    bottom: 10px;
+    right: 70px;
+}
+
+
+
 .project-title .easy-peasy-app{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
+    position: relative;
 }
-.project-title .easy-peasy-app img{
+
+.project-title .easy-peasy-app .first-img{
+    position: absolute;
+    bottom: 10px;
+    right: 120px;
 }
+.project-title .easy-peasy-app .sec-img{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.project-title .easy-peasy-app .third-img{
+    position: absolute;
+    bottom: 10px;
+    right: 70px;
+}
+
+
 .project-title .ad-blocker{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
+    position: relative;
 }
+
+.project-title .ad-blocker .first-img{
+    position: absolute;
+    bottom: 10px;
+    right: 120px;
+}
+.project-title .ad-blocker .sec-img{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.project-title .ad-blocker .third-img{
+    position: absolute;
+    bottom: 10px;
+    right: 70px;
+}
+
+
 .project-title .money-maker{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
+    position: relative;
+}
+.project-title .money-maker .first-img{
+    position: absolute;
+    bottom: 10px;
+    right: 120px;
+}
+.project-title .money-maker .sec-img{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.project-title .money-maker .third-img{
+    position: absolute;
+    bottom: 10px;
+    right: 70px;
 }
 
 .Announcements{
@@ -272,17 +371,17 @@ body{
     border-radius: 20px;
     background-color: yellow
 }
-.site-main{
-    padding: 30px;
-    position: relative;
-}
-.site-main h4{
+.Announcements .contain h4{
     padding: 5px;
     margin: 0%;
 }
-.site-main p{
-    padding: 0px;
+.Announcements .contain p{
+    padding: 5px;
     margin: 0%;
+}
+.site-main{
+    padding: 10px;
+    position: relative;
 }
 .site-main::after {
     content: '';
@@ -292,10 +391,63 @@ body{
     width: 80%; 
     border-bottom: 1px solid rgba(0, 0, 0, 0.3); 
   }
+  .comm-share{
+    padding: 10px;
+    position: relative;
+  }
+  .comm-share::after {
+    content: '';
+    position: absolute;
+    bottom: 5%; 
+    left: 10%;
+    width: 80%; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); 
+  }
+  .policy-up{
+    padding: 10px;
+    position: relative;
+  }
 .Trending{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+}
+.Trending h4{
+    margin: 0%;
+    padding: 0%;
+}
+.Trending p{
+    margin: 0%;
+    padding: 0%;
+}
+
+.Trending .container{
+    background-color: rgb(246, 216, 99);
+    border-radius: 20px;
+    padding: 20px;
+}
+.Trending .container .first{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.Trending .container .sec{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.Trending .container .third{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.Trending .container .fourth{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
